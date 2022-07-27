@@ -47,8 +47,7 @@ electron.app.on('ready', () => {
   windows.main = new electron.BrowserWindow({
     width: 450,
     height: 200,
-    titleBarStyle: 'hidden-inset',
-    show: false
+
   });
 
   windows.main.loadURL(`file://${path.join(__dirname, 'index.html')}`);
